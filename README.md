@@ -7,5 +7,5 @@ This repository contains the projects I've completed during my 100 Days of Code 
 
 ## Project 3: [Treasure island project](https://github.com/AbhayPundora/100-Days-of-Code/tree/main/Treasure%20Island%20Project)
 
-## Project 3: [Rock Paper Scissor](https://github.com/AbhayPundora/100-Days-of-Code/tree/main/Rock%20Paper%20Scissors)
+## Project 4: [Rock Paper Scissor](https://github.com/AbhayPundora/100-Days-of-Code/tree/main/Rock%20Paper%20Scissors)
 
