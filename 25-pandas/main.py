@@ -40,11 +40,8 @@ while game_is_on:
 
 
 all_states = states["state"].to_list()
-not_guessed_states = []
-for state in all_states:
-    if state not in guessed_states:
-        not_guessed_states.append(state)
 
+not_guessed_states = [state for state in all_states if state not in guessed_states]
 
 not_guessed_states_dict = {
     "states": not_guessed_states
