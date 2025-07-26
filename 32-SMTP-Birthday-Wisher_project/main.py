@@ -9,7 +9,6 @@ import pandas
 MY_EMAIL = "exmail"
 MY_PASSWORD = "dcjndjcjds"
 
-
 current_date = dt.datetime.now()
 current_day = current_date.day
 current_month = current_date.month
@@ -19,12 +18,9 @@ print(current_month)
 
 birthday_people = pandas.read_csv("birthdays.csv")
 
-
 people_to_wish = {person.birthday_person: person.email for (_, person) in birthday_people.iterrows() if current_day == person.day and current_month == person.month}
 
 names = list(people_to_wish.keys())
-
-
 
 for name in names:
     with open(f"letter_templates/letter_{random.randint(1,3)}.txt") as letter:
