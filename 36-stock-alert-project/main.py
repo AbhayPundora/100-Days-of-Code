@@ -6,8 +6,8 @@ import time
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
-account_sid ="AC209d36747005271e171c0jnjvfndv"
-auth_token="9ee2efbf30dvjfdnkv87884664fac061"
+account_sid ="AC209d36747005271ecdcdcjvfndv"
+auth_token="9ee2efbf30dvjfdnkcsdcks84664fac061"
 
 
 today = dt.datetime.now().today()
@@ -17,7 +17,7 @@ print(today)
 print(y_date)
 print(p_date)
 
-response = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TSLA&apikey=M6QCVXMDUDDWY1BQ")
+response = requests.get("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TSLA&apikey=M6QCVXMDUBDCKJBDY1BQ")
 print(response.json())
 yesterday_closing_price = float(response.json()["Time Series (Daily)"][str(y_date)]['4. close'])
 day_before_yesterday_closing_price = float(response.json()["Time Series (Daily)"][str(p_date)]['4. close'])
@@ -38,7 +38,7 @@ else:
 
 
 if abs(profit_or_lose) >= 5:
-    news_articles = requests.get(f"https://newsapi.org/v2/everything?q=tesla&from={str(y_date)}&to={str(y_date)}&sortBy=popularity&page=3&apiKey=baa6a0b7d4ae44e4adc7a67ff4da9fbe")
+    news_articles = requests.get(f"https://newsapi.org/v2/everything?q=tesla&from={str(y_date)}&to={str(y_date)}&sortBy=popularity&page=3&apiKey=baa6a0b7d4ae44e4addbcbksdc4da9fbe")
     print(news_articles.json())
     data = news_articles.json()
     title = [item["title"] for item in data["articles"]][0:3]
