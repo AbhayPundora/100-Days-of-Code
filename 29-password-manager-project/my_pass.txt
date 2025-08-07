@@ -1,6 +1,0 @@
-www.google.com  |  abhay@.com  | 12345
-www.facebook.com  |  abhay@.com  | 098765
-www.x.com  |  abhay@.com  | 071845
-discord  |  abhay@.com  | 140
-w3  |  abhay@.com  | 45
-freecodecamp  |  abhay@.com  | 0wzS%aK9+Gl%5T)
